@@ -1,535 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kleison Vitoriano - Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kleison Vitoriano - Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+  
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#0F0F0F] text-[#F2EFE9] font-['Inter'] antialiased selection:bg-[#E52323] selection:text-white overflow-x-hidden">
+  
+  <div class="max-w-[1440px] mx-auto p-4 md:p-8 overflow-hidden">
+    
+    <!-- HEADER -->
+    <header class="flex justify-between items-center border-b-2 border-[#F2EFE9]/20 pb-4 mb-8" data-aos="fade-down">
+      <div class="flex items-center gap-2">
+        <i class="fas fa-asterisk text-[#E52323] text-xl"></i>
+        <span class="font-['Space_Mono'] uppercase tracking-widest text-sm font-bold">Web Developer</span>
+      </div>
+      <a href="#contato" class="w-12 h-12 bg-[#F2EFE9] text-[#0F0F0F] flex items-center justify-center text-2xl hover:bg-[#E52323] hover:text-[#F2EFE9] transition-colors cursor-pointer">
+        <i class="fas fa-arrow-down"></i>
+      </a>
+    </header>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
-
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body
-    class="bg-[#0F0F0F] text-[#F2EFE9] font-['Inter'] antialiased selection:bg-[#E52323] selection:text-white overflow-x-hidden"
-  >
-    <div class="max-w-[1440px] mx-auto p-4 md:p-8 overflow-hidden">
-      <!-- HEADER -->
-      <header
-        class="flex justify-between items-center border-b-2 border-[#F2EFE9]/20 pb-4 mb-8"
-        data-aos="fade-down"
-      >
-        <div class="flex items-center gap-2">
-          <i class="fas fa-asterisk text-[#E52323] text-xl"></i>
-          <span
-            class="font-['Space_Mono'] uppercase tracking-widest text-sm font-bold"
-            >Web Developer</span
-          >
-        </div>
-        <a
-          href="#contato"
-          class="w-12 h-12 bg-[#F2EFE9] text-[#0F0F0F] flex items-center justify-center text-2xl hover:bg-[#E52323] hover:text-[#F2EFE9] transition-colors cursor-pointer"
-        >
-          <i class="fas fa-arrow-down"></i>
-        </a>
-      </header>
-
-      <!-- HERO TITLE -->
-      <div class="w-full border-b-2 border-[#F2EFE9]/20 pb-6 mb-8 relative">
-        <div class="text-pressure-container w-full md:w-[75%] lg:w-[80%]">
-          <h1
-            class="text-pressure-title text-[22vw] md:text-[14vw] lg:text-[13vw] leading-none tracking-normal text-[#F2EFE9] m-0"
-          >
-            PORTFOLIO
-          </h1>
-        </div>
-        <div
-          class="absolute right-0 top-4 hidden md:block w-48 text-right"
-          data-aos="fade-left"
-          data-aos-delay="300"
-        >
-          <p class="font-['Space_Mono'] text-xs text-[#F2EFE9]/70 uppercase">
-            Desenvolvedor focado em criar experiências digitais ousadas, úteis e
-            impossíveis de ignorar.
-          </p>
-          <!-- Barcode decoration -->
-          <div class="flex gap-1 justify-end mt-4 h-12 opacity-50">
-            <div class="w-1 bg-[#F2EFE9]"></div>
-            <div class="w-2 bg-[#F2EFE9]"></div>
-            <div class="w-1 bg-[#F2EFE9]"></div>
-            <div class="w-3 bg-[#F2EFE9]"></div>
-            <div class="w-1 bg-[#F2EFE9]"></div>
-            <div class="w-2 bg-[#F2EFE9]"></div>
-            <div class="w-1 bg-[#F2EFE9]"></div>
-          </div>
+    <!-- HERO TITLE -->
+    <div class="w-full border-b-2 border-[#F2EFE9]/20 pb-6 mb-8 relative">
+      <div class="text-pressure-container w-full md:w-[75%] lg:w-[80%]">
+        <h1 class="text-pressure-title text-[22vw] md:text-[14vw] lg:text-[13vw] leading-none tracking-normal text-[#F2EFE9] m-0">PORTFOLIO</h1>
+      </div>
+      <div class="absolute right-0 top-4 hidden md:block w-48 text-right" data-aos="fade-left" data-aos-delay="300">
+        <p class="font-['Space_Mono'] text-xs text-[#F2EFE9]/70 uppercase">Desenvolvedor focado em criar experiências digitais ousadas, úteis e impossíveis de ignorar.</p>
+        <!-- Barcode decoration -->
+        <div class="flex gap-1 justify-end mt-4 h-12 opacity-50">
+           <div class="w-1 bg-[#F2EFE9]"></div><div class="w-2 bg-[#F2EFE9]"></div><div class="w-1 bg-[#F2EFE9]"></div><div class="w-3 bg-[#F2EFE9]"></div><div class="w-1 bg-[#F2EFE9]"></div><div class="w-2 bg-[#F2EFE9]"></div><div class="w-1 bg-[#F2EFE9]"></div>
         </div>
       </div>
-
-      <!-- HERO CONTENT -->
-      <div
-        class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 border-b-2 border-[#F2EFE9]/20 pb-16"
-      >
-        <!-- LEFT COL -->
-        <div
-          class="lg:col-span-6 flex flex-col justify-between"
-          data-aos="fade-right"
-          data-aos-delay="200"
-        >
-          <div>
-            <h2 class="font-['Anton'] text-6xl md:text-8xl leading-[0.9] mb-4">
-              <span class="text-[#F2EFE9] split-text-anim block">KLEISON</span>
-              <span class="text-[#E52323] split-text-anim block"
-                >VITORIANO</span
-              >
-            </h2>
-            <div
-              class="inline-block bg-[#E52323] text-[#F2EFE9] font-['Space_Mono'] px-4 py-2 uppercase text-sm md:text-base font-bold mb-8"
-            >
-              <i class="fas fa-arrow-right mr-2"></i> Desenvolvedor Front-end
-            </div>
-
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-8 font-['Space_Mono'] text-sm"
-            >
-              <ul class="space-y-3">
-                <li>
-                  <i class="fas fa-code text-[#E52323] mr-2"></i> HTML5 / CSS3
-                </li>
-                <li>
-                  <i class="fas fa-code text-[#E52323] mr-2"></i> JAVASCRIPT
-                </li>
-                <li>
-                  <i class="fas fa-code text-[#E52323] mr-2"></i> REACT
-                  (Aprendendo)
-                </li>
-                <li>
-                  <i class="fas fa-code text-[#E52323] mr-2"></i> DESIGN
-                  RESPONSIVO
-                </li>
-              </ul>
-              <ul class="space-y-3">
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-map-marker-alt text-[#F2EFE9] text-xl"></i>
-                  <div>
-                    <span class="block text-xs text-[#F2EFE9]/50"
-                      >BASED IN</span
-                    >
-                    <span>BRASIL</span>
-                  </div>
-                </li>
-                <li class="flex items-center gap-2 mt-4">
-                  <div
-                    class="w-4 h-4 bg-[#F2EFE9] rounded-full animate-pulse"
-                  ></div>
-                  <div>
-                    <span class="block text-xs text-[#F2EFE9]/50">STATUS</span>
-                    <span>BUSCANDO VAGA</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT COL -->
-        <div
-          class="lg:col-span-6 flex justify-center items-center mt-12 lg:mt-0"
-          data-aos="fade-left"
-          data-aos-delay="400"
-        >
-          <div class="relative w-full max-w-sm">
-            <!-- Big Red Graphic Background -->
-            <div
-              class="absolute w-full h-full bg-[#E52323] top-4 md:top-6 left-4 md:left-6 opacity-100 z-0"
-            ></div>
-            <img
-              src="assets/profilefoto-nova.png"
-              alt="Kleison Vitoriano"
-              class="relative z-10 w-full object-cover object-top border-[6px] border-[#F2EFE9] shadow-2xl"
-            />
-
-            <!-- Rotating Badge -->
-            <div
-              class="absolute -left-12 md:-left-16 top-4 md:top-12 z-20 w-32 h-32 md:w-40 md:h-40 animate-[spin_15s_linear_infinite]"
-            >
-              <svg viewBox="0 0 100 100" class="w-full h-full fill-[#F2EFE9]">
-                <path
-                  id="circlePath"
-                  d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
-                  fill="none"
-                />
-                <text
-                  class="font-['Space_Mono'] text-[12px] font-bold uppercase tracking-widest"
-                >
-                  <textPath href="#circlePath">
-                    CODING THE WEB • BUILDING IDEAS •
-                  </textPath>
-                </text>
-              </svg>
-              <div
-                class="absolute inset-0 flex items-center justify-center text-[#E52323]"
-              >
-                <i class="fas fa-globe text-3xl md:text-4xl"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PROJECTS SECTION -->
-      <div
-        class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16 border-b-2 border-[#F2EFE9]/20 pb-16"
-      >
-        <div class="lg:col-span-1" data-aos="fade-right">
-          <h2
-            class="font-['Anton'] text-5xl md:text-6xl text-[#E52323] leading-[0.9] mb-4"
-          >
-            SELECTED<br />WORKS
-            <i class="fas fa-arrow-up-right-from-square text-3xl"></i>
-          </h2>
-        </div>
-        <div
-          class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <!-- Project 1 -->
-          <div
-            class="group border-2 border-[#F2EFE9]/20 p-6 hover:border-[#E52323] transition-colors bg-[#111]"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div
-              class="h-48 bg-[#0F0F0F] mb-6 flex items-center justify-center border-2 border-[#F2EFE9]/10 overflow-hidden relative transition-colors group-hover:border-[#E52323]/50"
-            >
-              <i
-                class="fas fa-couch text-6xl text-[#F2EFE9]/20 group-hover:text-[#E52323]/40 group-hover:scale-110 transition-all"
-              ></i>
-            </div>
-            <h3 class="font-['Anton'] text-3xl mb-2 text-[#F2EFE9]">
-              ART MÓVEIS
-            </h3>
-            <p
-              class="font-['Space_Mono'] text-xs text-[#E52323] uppercase mb-6"
-            >
-              Freelance / Landing Page
-            </p>
-            <a
-              href="https://artmoveisplanejadosbr.vercel.app/"
-              target="_blank"
-              class="inline-flex items-center justify-center w-full h-12 bg-[#F2EFE9] text-[#0F0F0F] font-bold font-['Space_Mono'] hover:bg-[#E52323] hover:text-[#F2EFE9] transition-colors text-sm"
-            >
-              VISITAR PROJETO <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-
-          <!-- Project 2 -->
-          <div
-            class="group border-2 border-[#F2EFE9]/20 p-6 hover:border-[#E52323] transition-colors bg-[#111]"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div
-              class="h-48 bg-[#0F0F0F] mb-6 flex items-center justify-center border-2 border-[#F2EFE9]/10 overflow-hidden relative transition-colors group-hover:border-[#E52323]/50"
-            >
-              <i
-                class="fas fa-users-cog text-6xl text-[#F2EFE9]/20 group-hover:text-[#E52323]/40 group-hover:scale-110 transition-all"
-              ></i>
-            </div>
-            <h3 class="font-['Anton'] text-3xl mb-2 text-[#F2EFE9]">
-              TEAMTRACK
-            </h3>
-            <p
-              class="font-['Space_Mono'] text-xs text-[#E52323] uppercase mb-6"
-            >
-              Design / Front-end / UI
-            </p>
-            <a
-              href="https://gitlab.com/gestao-projetos-imd/teamtrack/-/tree/556855cb3e5d024bbbf65f705ca4f50cd300eefa/"
-              target="_blank"
-              class="inline-flex items-center justify-center w-full h-12 bg-[#F2EFE9] text-[#0F0F0F] font-bold font-['Space_Mono'] hover:bg-[#E52323] hover:text-[#F2EFE9] transition-colors text-sm"
-            >
-              VISITAR CÓDIGO <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-
-          <!-- Project 3 -->
-          <div
-            class="group border-2 border-[#F2EFE9]/20 p-6 hover:border-[#E52323] transition-colors bg-[#111]"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div
-              class="h-48 bg-[#0F0F0F] mb-6 flex items-center justify-center border-2 border-[#F2EFE9]/10 overflow-hidden relative transition-colors group-hover:border-[#E52323]/50"
-            >
-              <i
-                class="fas fa-code text-6xl text-[#F2EFE9]/20 group-hover:text-[#E52323]/40 group-hover:scale-110 transition-all"
-              ></i>
-            </div>
-            <h3 class="font-['Anton'] text-3xl mb-2 text-[#F2EFE9]">
-              PORTFÓLIO PESSOAL
-            </h3>
-            <p
-              class="font-['Space_Mono'] text-xs text-[#E52323] uppercase mb-6"
-            >
-              Website / Design Responsivo
-            </p>
-            <button
-              class="inline-flex items-center justify-center w-full h-12 bg-[#F2EFE9]/10 text-[#F2EFE9]/50 font-bold font-['Space_Mono'] cursor-not-allowed text-sm"
-            >
-              PROJETO ATUAL
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- SKILLS SECTION -->
-      <div
-        class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16 border-b-2 border-[#F2EFE9]/20 pb-16"
-      >
-        <div class="lg:col-span-1" data-aos="fade-right">
-          <h2
-            class="font-['Anton'] text-5xl md:text-6xl text-[#F2EFE9] leading-[0.9]"
-          >
-            SKILLS<br /><span class="text-[#E52323]">I USE</span>
-            <i class="fas fa-asterisk text-4xl text-[#F2EFE9]"></i>
-          </h2>
-        </div>
-        <div class="lg:col-span-3">
-          <div class="flex flex-wrap gap-4">
-            <div
-              class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> HTML / CSS
-            </div>
-            <div
-              class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base"
-              data-aos="zoom-in"
-              data-aos-delay="150"
-            >
-              <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> JAVASCRIPT
-            </div>
-            <div
-              class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> TAILWIND
-              CSS
-            </div>
-            <div
-              class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base"
-              data-aos="zoom-in"
-              data-aos-delay="250"
-            >
-              <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> DESIGN
-              RESPONSIVO
-            </div>
-            <div
-              class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> UI / UX
-              DESIGN
-            </div>
-            <div
-              class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base"
-              data-aos="zoom-in"
-              data-aos-delay="350"
-            >
-              <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> GIT /
-              GITHUB
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ABOUT / EDUCATION -->
-      <div
-        class="grid grid-cols-1 lg:grid-cols-4 gap-0 mb-16 border-4 border-[#F2EFE9]"
-        data-aos="fade-up"
-      >
-        <div
-          class="lg:col-span-1 bg-[#E52323] p-8 flex flex-col justify-between"
-        >
-          <h2
-            class="font-['Anton'] text-4xl md:text-5xl text-[#0F0F0F] leading-[0.9]"
-          >
-            SOBRE &<br />FORMAÇÃO
-          </h2>
-          <i
-            class="fas fa-arrow-down text-4xl text-[#0F0F0F] self-start mt-8 hidden lg:block"
-          ></i>
-        </div>
-        <div class="lg:col-span-3 bg-[#F2EFE9] p-8 md:p-12 text-[#0F0F0F]">
-          <h3
-            class="font-['Anton'] text-3xl md:text-4xl mb-8 border-b-2 border-[#0F0F0F]/20 pb-4"
-          >
-            MINHA JORNADA
-          </h3>
-          <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 font-['Space_Mono']"
-          >
-            <div class="col-span-1 md:col-span-1">
-              <div
-                class="w-14 h-14 rounded-full bg-[#E52323] text-[#F2EFE9] flex items-center justify-center mb-6 text-2xl shadow-[4px_4px_0_#0F0F0F]"
-              >
-                <i class="fas fa-user"></i>
-              </div>
-              <h4
-                class="font-bold mb-3 uppercase text-base tracking-widest border-b-2 border-[#0F0F0F] inline-block pb-1"
-              >
-                Perfil
-              </h4>
-              <p class="text-xs leading-relaxed mt-2">
-                Sou estudante de Tecnologia da Informação, com formação técnica
-                em Informática. Apaixonado por desenvolvimento front-end e em
-                constante aprendizado.
-              </p>
-            </div>
-            <div class="col-span-1 md:col-span-1">
-              <div
-                class="w-14 h-14 bg-[#0F0F0F] text-[#F2EFE9] flex items-center justify-center mb-6 text-2xl shadow-[4px_4px_0_#E52323]"
-              >
-                <i class="fas fa-graduation-cap"></i>
-              </div>
-              <h4
-                class="font-bold mb-3 uppercase text-base tracking-widest border-b-2 border-[#0F0F0F] inline-block pb-1"
-              >
-                Superior
-              </h4>
-              <p class="text-xs leading-relaxed mt-2">
-                Bacharelado em Tecnologia da Informação (Em andamento). Foco em
-                engenharia de software e desenvolvimento web.
-              </p>
-            </div>
-            <div class="col-span-1 md:col-span-1">
-              <div
-                class="w-14 h-14 bg-[#0F0F0F] text-[#F2EFE9] flex items-center justify-center mb-6 text-2xl clip-path-polygon shadow-[4px_4px_0_#E52323]"
-              >
-                <i class="fas fa-laptop-code"></i>
-              </div>
-              <h4
-                class="font-bold mb-3 uppercase text-base tracking-widest border-b-2 border-[#0F0F0F] inline-block pb-1"
-              >
-                Técnico
-              </h4>
-              <p class="text-xs leading-relaxed mt-2">
-                Técnico em Informática (Formação concluída). Base sólida em
-                manutenção, redes e lógica de programação.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CONTACT FOOTER -->
-      <div
-        id="contato"
-        class="grid grid-cols-1 lg:grid-cols-4 gap-0 border-4 border-[#E52323]"
-        data-aos="zoom-in-up"
-      >
-        <div
-          class="lg:col-span-2 bg-[#E52323] p-8 md:p-12 text-[#0F0F0F] flex flex-col justify-between"
-        >
-          <h2
-            class="font-['Anton'] text-5xl md:text-[5.5rem] leading-[0.85] mb-8 uppercase"
-          >
-            Let's build<br />something<br />epic together
-          </h2>
-          <div class="flex gap-4">
-            <i class="fas fa-arrow-up-right-from-square text-4xl"></i>
-          </div>
-        </div>
-        <div
-          class="lg:col-span-2 bg-[#0F0F0F] p-8 md:p-12 text-[#F2EFE9] relative overflow-hidden flex flex-col justify-center"
-        >
-          <!-- Decorative shapes -->
-          <div
-            class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#E52323] rounded-full opacity-10"
-          ></div>
-          <i
-            class="fas fa-asterisk absolute top-8 right-8 text-6xl text-[#E52323] opacity-40"
-          ></i>
-
-          <ul
-            class="space-y-8 font-['Space_Mono'] relative z-10 text-sm md:text-base"
-          >
-            <li>
-              <a
-                href="mailto:kleissonvitoriano@gmail.com"
-                class="flex items-center gap-6 hover:text-[#E52323] transition-colors group"
-              >
-                <div
-                  class="w-12 h-12 border-2 border-[#F2EFE9] flex items-center justify-center group-hover:border-[#E52323] group-hover:bg-[#E52323] group-hover:text-[#0F0F0F] transition-all"
-                >
-                  <i class="fas fa-envelope text-xl"></i>
-                </div>
-                <span class="break-all">kleissonvitoriano@gmail.com</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="tel:+5584999034280"
-                class="flex items-center gap-6 hover:text-[#E52323] transition-colors group"
-              >
-                <div
-                  class="w-12 h-12 border-2 border-[#F2EFE9] flex items-center justify-center group-hover:border-[#E52323] group-hover:bg-[#E52323] group-hover:text-[#0F0F0F] transition-all"
-                >
-                  <i class="fas fa-phone text-xl"></i>
-                </div>
-                <span>+55 84 99903-4280</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/kleison-vitoriano-da-silva-670852298"
-                target="_blank"
-                class="flex items-center gap-6 hover:text-[#E52323] transition-colors group"
-              >
-                <div
-                  class="w-12 h-12 border-2 border-[#F2EFE9] flex items-center justify-center group-hover:border-[#E52323] group-hover:bg-[#E52323] group-hover:text-[#0F0F0F] transition-all"
-                >
-                  <i class="fab fa-linkedin text-xl"></i>
-                </div>
-                <span>LinkedIn / Kleison</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/kleisonvitoriano"
-                target="_blank"
-                class="flex items-center gap-6 hover:text-[#E52323] transition-colors group"
-              >
-                <div
-                  class="w-12 h-12 border-2 border-[#F2EFE9] flex items-center justify-center group-hover:border-[#E52323] group-hover:bg-[#E52323] group-hover:text-[#0F0F0F] transition-all"
-                >
-                  <i class="fab fa-github text-xl"></i>
-                </div>
-                <span>GitHub / kleisonvitoriano</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <footer
-        class="mt-12 text-center font-['Space_Mono'] text-xs text-[#F2EFE9]/40 pb-8 uppercase tracking-widest flex flex-col md:flex-row justify-between items-center border-t-2 border-[#F2EFE9]/10 pt-6"
-      >
-        <p>© 2026 Kleison Vitoriano. Todos os direitos reservados.</p>
-      </footer>
     </div>
 
-    <script type="module" src="main.js"></script>
-  </body>
+    <!-- HERO CONTENT -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 border-b-2 border-[#F2EFE9]/20 pb-16">
+      
+      <!-- LEFT COL -->
+      <div class="lg:col-span-6 flex flex-col justify-between" data-aos="fade-right" data-aos-delay="200">
+        <div>
+          <h2 class="font-['Anton'] text-6xl md:text-8xl leading-[0.9] mb-4">
+            <span class="text-[#F2EFE9] split-text-anim block">KLEISON</span>
+            <span class="text-[#E52323] split-text-anim block">VITORIANO</span>
+          </h2>
+          <div class="inline-block bg-[#E52323] text-[#F2EFE9] font-['Space_Mono'] px-4 py-2 uppercase text-sm md:text-base font-bold mb-8">
+            <i class="fas fa-arrow-right mr-2"></i> Desenvolvedor Front-end
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-['Space_Mono'] text-sm">
+            <ul class="space-y-3">
+              <li><i class="fas fa-code text-[#E52323] mr-2"></i> HTML5 / CSS3</li>
+              <li><i class="fas fa-code text-[#E52323] mr-2"></i> JAVASCRIPT</li>
+              <li><i class="fas fa-code text-[#E52323] mr-2"></i> REACT (Aprendendo)</li>
+              <li><i class="fas fa-code text-[#E52323] mr-2"></i> DESIGN RESPONSIVO</li>
+            </ul>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-map-marker-alt text-[#F2EFE9] text-xl"></i>
+                <div>
+                  <span class="block text-xs text-[#F2EFE9]/50">BASED IN</span>
+                  <span>BRASIL</span>
+                </div>
+              </li>
+              <li class="flex items-center gap-2 mt-4">
+                <div class="w-4 h-4 bg-[#F2EFE9] rounded-full animate-pulse"></div>
+                <div>
+                  <span class="block text-xs text-[#F2EFE9]/50">STATUS</span>
+                  <span>BUSCANDO VAGA</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COL -->
+      <div class="lg:col-span-6 flex justify-center items-center mt-12 lg:mt-0" data-aos="fade-left" data-aos-delay="400">
+        <div class="relative w-full max-w-sm">
+          <!-- Big Red Graphic Background -->
+          <div class="absolute w-full h-full bg-[#E52323] top-4 md:top-6 left-4 md:left-6 opacity-100 z-0"></div>
+          <img src="assets/ChatGPT%20Image%2021%20de%20jul.%20de%202026,%2013_19_46.png" alt="Kleison Vitoriano" class="relative z-10 w-full object-cover object-top border-[6px] border-[#F2EFE9] shadow-2xl">
+          
+          <!-- Rotating Badge -->
+          <div class="absolute -left-12 md:-left-16 top-4 md:top-12 z-20 w-32 h-32 md:w-40 md:h-40 animate-[spin_15s_linear_infinite]">
+            <svg viewBox="0 0 100 100" class="w-full h-full fill-[#F2EFE9]">
+              <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+              <text class="font-['Space_Mono'] text-[12px] font-bold uppercase tracking-widest">
+                <textPath href="#circlePath">
+                  CODING THE WEB • BUILDING IDEAS •
+                </textPath>
+              </text>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center text-[#E52323]">
+              <i class="fas fa-globe text-3xl md:text-4xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16 border-b-2 border-[#F2EFE9]/20 pb-16">
+      <div class="lg:col-span-1" data-aos="fade-right">
+        <h2 class="font-['Anton'] text-5xl md:text-6xl text-[#E52323] leading-[0.9] mb-4">SELECTED<br>WORKS <i class="fas fa-arrow-up-right-from-square text-3xl"></i></h2>
+      </div>
+      <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Project 1 -->
+        <div class="group border-2 border-[#F2EFE9]/20 p-6 hover:border-[#E52323] transition-colors bg-[#111]" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-48 bg-[#0F0F0F] mb-6 flex items-center justify-center border-2 border-[#F2EFE9]/10 overflow-hidden relative transition-colors group-hover:border-[#E52323]/50">
+            <i class="fas fa-couch text-6xl text-[#F2EFE9]/20 group-hover:text-[#E52323]/40 group-hover:scale-110 transition-all"></i>
+          </div>
+          <h3 class="font-['Anton'] text-3xl mb-2 text-[#F2EFE9]">ART MÓVEIS</h3>
+          <p class="font-['Space_Mono'] text-xs text-[#E52323] uppercase mb-6">Freelance / Landing Page</p>
+          <a href="https://artmoveisplanejadosbr.vercel.app/" target="_blank" class="inline-flex items-center justify-center w-full h-12 bg-[#F2EFE9] text-[#0F0F0F] font-bold font-['Space_Mono'] hover:bg-[#E52323] hover:text-[#F2EFE9] transition-colors text-sm">
+            VISITAR PROJETO <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="group border-2 border-[#F2EFE9]/20 p-6 hover:border-[#E52323] transition-colors bg-[#111]" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-48 bg-[#0F0F0F] mb-6 flex items-center justify-center border-2 border-[#F2EFE9]/10 overflow-hidden relative transition-colors group-hover:border-[#E52323]/50">
+            <i class="fas fa-users-cog text-6xl text-[#F2EFE9]/20 group-hover:text-[#E52323]/40 group-hover:scale-110 transition-all"></i>
+          </div>
+          <h3 class="font-['Anton'] text-3xl mb-2 text-[#F2EFE9]">TEAMTRACK</h3>
+          <p class="font-['Space_Mono'] text-xs text-[#E52323] uppercase mb-6">Design / Front-end / UI</p>
+          <a href="https://gitlab.com/gestao-projetos-imd/teamtrack/-/tree/556855cb3e5d024bbbf65f705ca4f50cd300eefa/" target="_blank" class="inline-flex items-center justify-center w-full h-12 bg-[#F2EFE9] text-[#0F0F0F] font-bold font-['Space_Mono'] hover:bg-[#E52323] hover:text-[#F2EFE9] transition-colors text-sm">
+            VISITAR CÓDIGO <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="group border-2 border-[#F2EFE9]/20 p-6 hover:border-[#E52323] transition-colors bg-[#111]" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-48 bg-[#0F0F0F] mb-6 flex items-center justify-center border-2 border-[#F2EFE9]/10 overflow-hidden relative transition-colors group-hover:border-[#E52323]/50">
+            <i class="fas fa-code text-6xl text-[#F2EFE9]/20 group-hover:text-[#E52323]/40 group-hover:scale-110 transition-all"></i>
+          </div>
+          <h3 class="font-['Anton'] text-3xl mb-2 text-[#F2EFE9]">PORTFÓLIO PESSOAL</h3>
+          <p class="font-['Space_Mono'] text-xs text-[#E52323] uppercase mb-6">Website / Design Responsivo</p>
+          <button class="inline-flex items-center justify-center w-full h-12 bg-[#F2EFE9]/10 text-[#F2EFE9]/50 font-bold font-['Space_Mono'] cursor-not-allowed text-sm">
+            PROJETO ATUAL
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16 border-b-2 border-[#F2EFE9]/20 pb-16">
+      <div class="lg:col-span-1" data-aos="fade-right">
+        <h2 class="font-['Anton'] text-5xl md:text-6xl text-[#F2EFE9] leading-[0.9]">SKILLS<br><span class="text-[#E52323]">I USE</span> <i class="fas fa-asterisk text-4xl text-[#F2EFE9]"></i></h2>
+      </div>
+      <div class="lg:col-span-3">
+        <div class="flex flex-wrap gap-4">
+          <div class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base" data-aos="zoom-in" data-aos-delay="100">
+            <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> HTML / CSS
+          </div>
+          <div class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base" data-aos="zoom-in" data-aos-delay="150">
+            <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> JAVASCRIPT
+          </div>
+          <div class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base" data-aos="zoom-in" data-aos-delay="200">
+            <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> TAILWIND CSS
+          </div>
+          <div class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base" data-aos="zoom-in" data-aos-delay="250">
+            <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> DESIGN RESPONSIVO
+          </div>
+          <div class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base" data-aos="zoom-in" data-aos-delay="300">
+            <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> UI / UX DESIGN
+          </div>
+          <div class="border-2 border-[#F2EFE9] rounded-full px-6 py-3 font-['Space_Mono'] flex items-center gap-2 hover:bg-[#F2EFE9] hover:text-[#0F0F0F] transition-colors cursor-default text-sm md:text-base" data-aos="zoom-in" data-aos-delay="350">
+            <span class="w-3 h-3 rounded-full bg-[#E52323]"></span> GIT / GITHUB
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT / EDUCATION -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-0 mb-16 border-4 border-[#F2EFE9]" data-aos="fade-up">
+      <div class="lg:col-span-1 bg-[#E52323] p-8 flex flex-col justify-between">
+        <h2 class="font-['Anton'] text-4xl md:text-5xl text-[#0F0F0F] leading-[0.9]">SOBRE &<br>FORMAÇÃO</h2>
+        <i class="fas fa-arrow-down text-4xl text-[#0F0F0F] self-start mt-8 hidden lg:block"></i>
+      </div>
+      <div class="lg:col-span-3 bg-[#F2EFE9] p-8 md:p-12 text-[#0F0F0F]">
+        <h3 class="font-['Anton'] text-3xl md:text-4xl mb-8 border-b-2 border-[#0F0F0F]/20 pb-4">MINHA JORNADA</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 font-['Space_Mono']">
+          <div class="col-span-1 md:col-span-1">
+            <div class="w-14 h-14 rounded-full bg-[#E52323] text-[#F2EFE9] flex items-center justify-center mb-6 text-2xl shadow-[4px_4px_0_#0F0F0F]">
+              <i class="fas fa-user"></i>
+            </div>
+            <h4 class="font-bold mb-3 uppercase text-base tracking-widest border-b-2 border-[#0F0F0F] inline-block pb-1">Perfil</h4>
+            <p class="text-xs leading-relaxed mt-2">Sou estudante de Tecnologia da Informação, com formação técnica em Informática. Apaixonado por desenvolvimento front-end e em constante aprendizado.</p>
+          </div>
+          <div class="col-span-1 md:col-span-1">
+            <div class="w-14 h-14 bg-[#0F0F0F] text-[#F2EFE9] flex items-center justify-center mb-6 text-2xl shadow-[4px_4px_0_#E52323]">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4 class="font-bold mb-3 uppercase text-base tracking-widest border-b-2 border-[#0F0F0F] inline-block pb-1">Superior</h4>
+            <p class="text-xs leading-relaxed mt-2">Bacharelado em Tecnologia da Informação (Em andamento). Foco em engenharia de software e desenvolvimento web.</p>
+          </div>
+          <div class="col-span-1 md:col-span-1">
+            <div class="w-14 h-14 bg-[#0F0F0F] text-[#F2EFE9] flex items-center justify-center mb-6 text-2xl clip-path-polygon shadow-[4px_4px_0_#E52323]">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h4 class="font-bold mb-3 uppercase text-base tracking-widest border-b-2 border-[#0F0F0F] inline-block pb-1">Técnico</h4>
+            <p class="text-xs leading-relaxed mt-2">Técnico em Informática (Formação concluída). Base sólida em manutenção, redes e lógica de programação.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT FOOTER -->
+    <div id="contato" class="grid grid-cols-1 lg:grid-cols-4 gap-0 border-4 border-[#E52323]" data-aos="zoom-in-up">
+      <div class="lg:col-span-2 bg-[#E52323] p-8 md:p-12 text-[#0F0F0F] flex flex-col justify-between">
+        <h2 class="font-['Anton'] text-5xl md:text-[5.5rem] leading-[0.85] mb-8 uppercase">Let's build<br>something<br>epic together</h2>
+        <div class="flex gap-4">
+           <i class="fas fa-arrow-up-right-from-square text-4xl"></i>
+        </div>
+      </div>
+      <div class="lg:col-span-2 bg-[#0F0F0F] p-8 md:p-12 text-[#F2EFE9] relative overflow-hidden flex flex-col justify-center">
+        <!-- Decorative shapes -->
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#E52323] rounded-full opacity-10"></div>
+        <i class="fas fa-asterisk absolute top-8 right-8 text-6xl text-[#E52323] opacity-40"></i>
+        
+        <ul class="space-y-8 font-['Space_Mono'] relative z-10 text-sm md:text-base">
+          <li>
+            <a href="mailto:kleissonvitoriano@gmail.com" class="flex items-center gap-6 hover:text-[#E52323] transition-colors group">
+              <div class="w-12 h-12 border-2 border-[#F2EFE9] flex items-center justify-center group-hover:border-[#E52323] group-hover:bg-[#E52323] group-hover:text-[#0F0F0F] transition-all"><i class="fas fa-envelope text-xl"></i></div> 
+              <span class="break-all">kleissonvitoriano@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+5584999034280" class="flex items-center gap-6 hover:text-[#E52323] transition-colors group">
+              <div class="w-12 h-12 border-2 border-[#F2EFE9] flex items-center justify-center group-hover:border-[#E52323] group-hover:bg-[#E52323] group-hover:text-[#0F0F0F] transition-all"><i class="fas fa-phone text-xl"></i></div> 
+              <span>+55 84 99903-4280</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kleison-vitoriano-da-silva-670852298" target="_blank" class="flex items-center gap-6 hover:text-[#E52323] transition-colors group">
+              <div class="w-12 h-12 border-2 border-[#F2EFE9] flex items-center justify-center group-hover:border-[#E52323] group-hover:bg-[#E52323] group-hover:text-[#0F0F0F] transition-all"><i class="fab fa-linkedin text-xl"></i></div> 
+              <span>LinkedIn / Kleison</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/kleisonvitoriano" target="_blank" class="flex items-center gap-6 hover:text-[#E52323] transition-colors group">
+              <div class="w-12 h-12 border-2 border-[#F2EFE9] flex items-center justify-center group-hover:border-[#E52323] group-hover:bg-[#E52323] group-hover:text-[#0F0F0F] transition-all"><i class="fab fa-github text-xl"></i></div> 
+              <span>GitHub / kleisonvitoriano</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <footer class="mt-12 text-center font-['Space_Mono'] text-xs text-[#F2EFE9]/40 pb-8 uppercase tracking-widest flex flex-col md:flex-row justify-between items-center border-t-2 border-[#F2EFE9]/10 pt-6">
+      <p>© 2026 Kleison Vitoriano. Todos os direitos reservados.</p>
+    </footer>
+
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
 </html>
