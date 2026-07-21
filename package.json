@@ -1,0 +1,23 @@
+{
+  "name": "kleison-vitoriano-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio de Kleison Vitoriano, Desenvolvedor Front-end em busca de oportunidades.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview",
+    "lint": "echo 'No lint step required'"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.21",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.1.5"
+  }
+}
